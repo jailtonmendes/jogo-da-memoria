@@ -1,22 +1,28 @@
 const cardBoard = document.querySelector("#cardboard");
 
 const images = [
-    'angular.svg',
-    'aurelia.svg',
-    'vue.svg',
-    'react.svg',
-    'backbone.svg',
-    'ember.svg'
+    'sport.png',
+    'Nautico.png',
+    'santaCruz.png',
+    'corinthians.png',
+    'saoPaulo.png',
+    'palmeiras.png',
+    'santos.png',
+    'gremio.png',
+    'inter.png',
+    'cruzeiro.png'
 ];
 
 let cardHTML = "";
 
 images.forEach(img => {
     cardHTML += `
+        
         <div class="memory-card" data-card="${img}">
             <img class="front-face" src="img/${img}">
             <img class="back-face" src="img/js-badge.svg">
         </div>
+        
     `;
 });
 
